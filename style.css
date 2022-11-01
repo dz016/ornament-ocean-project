@@ -1,0 +1,151 @@
+/* 
+
+For text:[1]google font
+         [2]Type scale
+line height and space.
+
+For colors: [1] open colour
+            [2] contrast checker
+
+For icons: [1] heroicon{scg}
+
+For shadow:[1] box-shadow: 0 20px 30px 0 rgba(0,0,0,less than 0.1)
+bordor_radius: ; to cirlcle 50%
+
+flex-direction:column;
+box-shadow: 0 0 32px rgba(0,0,0,0.1)
+background image url(image)/background image  linear gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)) url(image)
+baxkground size cover
+
+100vh means full view port
+ transform --> [1]scale-> increase size
+             [2]translate-> move in absolte positioning
+             tanslate(-50,-50)
+*/
+
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+.main {
+  height: 90vh;
+  position: relative;
+
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.6),
+      rgba(34, 34, 34, 0.6)
+    ),
+    url(gita-krishnamurti-TUH4KRKoUEg-unsplash.jpg);
+  background-size: cover;
+  color: #fff;
+}
+/* ------------------------ */
+/* GENERAL STYLES */
+/* ------------------------ */
+body {
+  font-family: "Inter", sans-serif;
+  /* margin: 200px auto; */
+}
+
+li {
+  list-style: none;
+}
+.main-nav {
+  display: flex;
+  justify-content: start;
+  gap: 4.2rem;
+  padding: 2.4rem;
+}
+.main-nav-link {
+  text-decoration: none;
+  font-size: 2.4rem;
+  color: #fff;
+}
+.hero {
+  position: relative;
+  height: 100%;
+  transform: translate(-50, -50);
+}
+.hero-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.welcome {
+  text-align: center;
+  font-size: 7.8rem;
+  font-style: italic;
+  font-family: serif;
+  font-weight: 700;
+  color: #f7d57f;
+}
+.shop-name {
+  text-align: center;
+  font-size: 7.8rem;
+  letter-spacing: -0.5rem;
+  font-style: italic;
+  font-family: serif;
+  font-weight: 700;
+  color: #fff;
+}
+.about {
+  font-size: 2rem;
+  line-height: 1.1;
+  text-align: center;
+  font-weight: 500;
+  color: #fff;
+}
+.logo {
+  color: #f7d57f;
+  font-weight: 700;
+}
+.number {
+  position: absolute;
+  top: 2%;
+  right: 3%;
+  font-size: 2rem;
+  background-color: #f7d57f;
+  padding: 1.2rem 2.4rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.702);
+}
+footer {
+  background-color: #f7d57f;
+  height: 10vh;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+.copyright {
+  font-size: 1.6rem;
+}
+.icon {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+.icons {
+  display: flex;
+  gap: 2px;
+}
